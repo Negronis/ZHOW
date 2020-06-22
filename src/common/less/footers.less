@@ -1,0 +1,40 @@
+@fot:~"zhhd-footer";
+.@{fot}{ 
+   display:flex;
+   justify-content:space-between;
+   text-align: center;
+   margin:0 auto; 
+   background-color: #f6f6f6; 
+   // padding:30px 0 ;
+   &-list-title{
+      font-size:30px;
+      font-weight: bold;
+      color:@subsidiary-color;
+      margin:10px 0;
+   }
+   &-block{
+      width:33%;
+      padding:0 15px;
+      text-align: center;
+      &:not(:last-child){
+         border-right:1px solid @border-color;
+      }
+      div{
+         margin-top:20px;
+      }
+      img{
+         margin-top:-10px;
+      }
+   }
+   &-mobile{
+      display:block !important;
+      div{
+         width: 90% !important;
+         margin:20px auto; 
+         border:0 !important;
+      }
+   }
+   &-bottom{
+      text-align: center;color:#dcdcdc ;background: #111111; height: 80px;width: 100%;line-height: 80px;font-size:10px;
+   }
+}

@@ -1,0 +1,185 @@
+@about:~'zhhd-about';
+.@{about}{
+	.mediaDisplay;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   margin:30px auto;
+   width:80%;
+   &-block{
+      h3{
+         color:#000;
+         font-size:23px;
+      }
+      margin: 20px;
+      color:@subsidiary-color;
+   }
+   &-company{
+      &-container{ 
+         width:80%;
+         margin:0 auto;
+         span{ 
+            display: inline-block;
+            width:5px;
+            height:18px;
+            background:@primary-color;
+            vertical-align: middle;
+            margin-right:10px;
+         } 
+         &-title{
+            display: inline-block;
+            vertical-align: middle; 
+         }
+         &-content{ 
+            line-height:40px;
+            text-indent: 20px;
+         }
+      }
+      &-news{
+         width:80%;
+         margin:0 auto; 
+         
+         span{
+            display: inline-block;
+            width:5px;
+            height:18px;
+            background:@primary-color;
+            vertical-align: middle;
+            margin-right:10px;
+         }
+         h3{
+            font-size:25px;
+            display: inline-block;
+            vertical-align: middle; 
+         }
+         &-list{
+            padding:20px;
+            margin-bottom:30px;
+            border-bottom:1px solid @border-color;
+            cursor: pointer;
+            transition: .5s all linear;
+            &:hover{
+               background:rgba(0,0,0,.5);
+               div{
+                  color:#fff !important; 
+               }
+            }
+            &-title{
+               font-size:20px;
+               margin-bottom:10px; 
+               font-weight: bold;
+            }
+            &-content{
+               padding-left:10px;
+            }
+            &-time{
+               margin-top:20px;
+               color:@subsidiary-color;
+            }
+         }
+      }
+      &-zx{
+         width:80%;
+         margin:0 auto;
+         span{
+            display: inline-block;
+            width:5px;
+            height:18px;
+            background:@primary-color;
+            vertical-align: middle;
+            margin-right:10px;
+         }
+         h3{
+            font-size:25px;
+            display: inline-block;
+            vertical-align: middle; 
+         }
+         &-list{
+            display:flex;
+            justify-content: space-between;
+            text-align: left;
+            position: relative;
+            border-bottom:1px solid @border-color;
+            margin:20px 0;
+            cursor: pointer;
+            transition: .5s all linear;
+            &:hover{
+               background:rgba(0,0,0,.5);
+               div{
+                  color:#fff !important; 
+                     }
+               }
+            .mediaDisplay;
+            &-img{
+               width:30%;
+               @media screen{
+                  @media   (max-width:768px){
+                     width:100%;
+                  }
+               }
+            }
+            &-block{
+               width:70%; 
+               @media screen{
+                  @media   (max-width:768px){
+                     width:100%;
+                  }
+               }
+            } 
+            &-title{
+               font-size:20px;
+               margin-bottom:20px;
+            }
+            &-content{ 
+               line-height: 40px;
+            }
+            &-time{ 
+               color:@subsidiary-color;
+               @media screen{
+                  @media   (min-width:768px){ 
+                     position: absolute;
+                     bottom:20px;
+                  }
+               }
+            }
+         } 
+      }
+      &-newsDetail{
+         padding:20px;
+         &-content{
+            width:95%;
+            margin:0 auto;
+            &-img{
+               display:flex;
+               justify-content: space-between; 
+               @media screen {
+                  @media (max-width:768px){
+                     display:block;
+                  }
+               }
+               img{
+                  // flex-flow: 2;
+                  width: 48%;
+                  margin:2.5% 0; 
+               }
+            }
+         }
+         &-title{
+            font-size:25px;
+            font-weight: bold;
+            margin-bottom:20px;
+            border-bottom:1px solid @border-color;
+            padding-bottom:20px;
+         }
+         &-zy{
+            font-weight: bold;
+            padding:10px;
+            background:@border-color;  
+            border-radius: 10px;;
+         }
+         div{
+            margin-bottom:20px;
+         }
+      }
+   }
+}

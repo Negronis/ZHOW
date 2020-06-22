@@ -1,0 +1,110 @@
+@Head:~'zhhd-headers';
+.borderes(@width:1px,@color:#000){
+   border:@width solid @color;
+}
+.rela{
+   position: relative;
+}
+.header-flex{
+   display: flex;
+   justify-content: left;
+   flex-wrap: nowrap;
+} 
+.@{Head}{ 
+   min-height: 50px;
+   line-height:50px;
+   background-color:@navColor ;
+   padding:10px;
+   width:100%;
+   position: fixed; 
+   z-index:9999;
+   top:0px;
+   .header-flex;
+   // mobile
+   &-right{
+      font-size:30px;
+      position: absolute;
+      right:30px;
+      color:@primary-color;
+   }
+   &-hide-menu{
+      width:100%;  
+      position: fixed;
+      left:0px;
+      box-sizing: border-box;
+      top:70px;
+      background-color:@navColor;
+      transition: .3s height linear;
+	  height: 0; 
+      overflow: hidden; 
+      z-index:9999;
+      a{
+         display: block !important;
+         width:98%;
+         padding:1%;
+         position: relative;
+         -webkit-tap-highlight-color:transparent;
+         z-index:3;
+         cursor: pointer;
+         div{
+            position: relative;
+            z-index:10;
+         } 
+      } 
+      &-show{
+         height:auto;
+      }
+   }
+   &-hide-menu-item-active{
+      background:@primary-color;
+      color:#fff !important;
+   }
+   // pc
+   &-pc-hidelist{
+      position: absolute; 
+      width:200px; 
+      background-color:rgba(0,0,0,.6);   
+      border-radius: 5px;
+      color:#fff;
+      cursor: pointer;
+      z-index:9999;
+      margin-top:10px;
+      div{
+         text-indent: 10px;
+         padding:5px; 
+         border-bottom:1px solid @border-color;
+         transition: .3s linear all;
+         &:hover{
+            background-color:@primary-color;
+         }
+      }
+   }
+   &-pcHeaderNav{
+      &:hover{
+         background:@primary-color;
+         color:#fff;
+      }
+   }
+   // general
+   a{
+      cursor: pointer;
+      text-decoration: none;
+      color:@subsidiary-color;
+      padding:0px 20px;  
+      position: relative; 
+      display:inline-block;
+      transition: .3s background linear;
+      -webkit-tap-highlight-color:transparent;
+   }
+   a{
+      text-decoration: none;
+      color:@subsidiary-color;
+      padding:0px 20px;  
+   }
+   div{ 
+      img{ 
+         vertical-align: middle;
+         padding:0px 20px;  
+      } 
+   }
+}
