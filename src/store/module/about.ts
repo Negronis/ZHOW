@@ -47,28 +47,38 @@ export default class Abouts extends VuexModule {
          list: [
             {
                title: "公司介绍",
-               content: `
-                  河北中昊慧达科技有限公司是一家专业从事医疗行业计算机信息综合管理系统的研发以及相应的系统集成工程的新型高科技企业。集市场开发、产品销售、系统集成、软件研制、售后服务为一体。公司专注于医院信息化综合管理平台的研发和推广工作。迄今为止推出了医院信息管理系统、检验科管理系统、影像存储与传输系统、体检系统、供应室管理系统、 电子病历系统、区域医疗系统、智能随访系统等。
+               content: ` 
+               河北中昊慧达科技有限公司是一家专业从事智慧医疗行业的新型高科技企业。公司集市场调研、自主研发、产品销售、售后服务为一体，多年来专注于医疗软件的研发和推广工作。
+               公司立足河北，客户遍布全国，用户数量达50多家， 市场占有率居省内同行前列， 是目前河北省最具竞争力的医疗卫生行业信息化建设全面解决方案提供商和服务商，其核心产品心衰随访平台是唯一一家专业适配国家心衰中心随访要求的软件。
                `
             },
             {
                title: "发展历程",
                content: `
-                  <div>中昊慧达科技成立于 2015 年， 公司立足河北，客户遍布全国，用户数量达50多家， 市场占有率居省内同行前列，是目前河北省最具竞争力的医疗卫生行业信息化建设全面解决方案提供商和服务商。 我们的目标是为医院提供国内一流的医疗信息化解决方案，使之能更好的服务于患者；为医院数字化系统提供全面的解决方案， 并成为该领域中的佼佼者。</div>
-                  <div>中昊慧达科技以“创造数字化医疗、服务健康事业”为理念，秉承专业化、 规模化的发展思路，以医疗行业的信息化建设为己任，为振兴医疗软件、推进中国医疗事业的发展而贡献力量！</div>
-                  <div>公司拥有专业的客户服务体系，拥有一批经验丰富，受过专业培训的工程技术人员，可为医院提供病人信息共享的计算机网络解决方案。 在立足自主研发的前提下，积极开展合作与交流，先后与HP、Dell等结成合作伙伴，在广泛的合作交往中，逐步得到合作伙伴的充分认可。</div>
+                  <div>
+                  中昊慧达科技成立于 2015 年， 
+                  我们的目标是为医院提供国内一流的医疗信息化解决方案，使之能更好的服务于患者；
+                  为医院数字化系统提供全面的解决方案， 并成为该领域中的佼佼者。</div>
+                  <div>
+                  中昊慧达拥有雄厚的研发实力和智慧成果。
+                  公司一直积极开展技术创新工作，率先开发出业界领先的心衰随访平台、智慧医疗平台、制氧设备远程监控系统、智能机器人等产品阵列，并取得了相应的软件著作权。
+                  中昊慧达以“创造数字化医疗、服务健康事业”为理念，秉承专业化、 规模化的发展思路，
+                  以医疗行业的信息化建设为己任，为振兴医疗软件、推进中国医疗事业的发展而贡献力量！</div>
                `
             },
             {
                title: "企业文化",
                content: `
-               公司自成立之初，即秉承着“方便、快捷、高效、安全、严密”的服务理念， 以“忠诚、敬业、积极、负责、效率、结果、沟通、团队、进取、低调、成本、感恩”为企业核心价值观，致力于打造成为医疗行业集成问题解决方案服务商。
+               公司自成立之初，即秉承着“方便、快捷、高效、安全、严密”的服务理念， 以“忠诚、敬业、积极、负责、效率、结果、沟通、团队、进取、低调、成本、感恩”为企业核心价值观，
+               致力于打造成为医疗行业集成问题解决方案服务商。
                `
             },
             {
                title: "企业愿景",
                content: `
-               公司致力于利用物联网、云计算、大数据、人工智能等信息技术，专注医疗信息化、深耕大健康领域，成为中国智慧医疗行业先行者，实现智慧医疗科技化、 健康医疗智能化管理，为我国的医疗卫生体系建设及国民的健康生活履行企业使命！
+               公司致力于利用物联网、云计算、大数据、人工智能等信息技术，专注医疗信息化、深耕心衰随访领域，
+               成为中国智慧医疗行业先行者，实现智慧医疗科技化、 心衰随访智能化，
+               为我国的医疗卫生体系建设及国民的健康生活履行企业使命！
                `
             },
             {
@@ -84,15 +94,16 @@ export default class Abouts extends VuexModule {
    get getCompanyPresent() {
       return this.CompanyPresent;
    }
-   // 公司新闻
+   // 公司新闻 - 列表
    CompanyNews: AboutInterface = {
       title: "公司新闻",
       list: [
+
          {
             index: 1,
             title: "中昊科技&格林布瑞股权分红激励启动大会暨一期授权仪式顺利召开",
             content: "2020年5月22日下午，中昊科技&格林布瑞股权分红激励大会隆重召开。会议旨在对两个公司优秀员工代表进行股权分红激励，实现员工与公司同心同行，共赢未来！",
-            time: "2020年5月22日"
+            time: "2020年05月22日"
          },
          {
             index: 2,
@@ -102,12 +113,24 @@ export default class Abouts extends VuexModule {
          },
          {
             index: 3,
-            title: "厉害了！中昊益联携手秦皇岛市中医医院实现智慧就医！",
-            content: "6月25日，“中昊医联平台”在秦皇岛市中医医院全面运行！预约挂号、手机缴费、住院预交金、报告查询......实现一站式智慧就医！",
-            time: "2018年06月25日"
+            title: "厉害了！心衰随访平台获计算机软件著作权登记证书",
+            content: "2018年8月17日，根据《计算机软件保护条例》和《计算机软件著作权登记办法》的规定，经中国版权保护中心审核，中华人民共和国国家版权局对中昊慧达“心衰随访平台”系统软件进行了知识产权认定登记，并颁发了计算机软件著作权登记证书。",
+            time: "2018年08月25日"
          },
          {
             index: 4,
+            title: "精彩全纪录！中昊慧达鼎力支持邯郸市心力衰竭2018科学年会",
+            content: "2018年7月14日，由邯郸市第一医院主办，河北中昊慧达科技有限公司协办的邯郸市心力衰竭2018科学年会在邯郸宾馆迎宾楼金色大厅成功召开。",
+            time: "2018年07月23日"
+         },
+         {
+            index: 5,
+            title: "心衰领域的“排头兵”！中昊慧达心衰随访平台项目获高度评价！",
+            content: "2018年4月9日，由邯郸市第一医院主办，河北中昊慧达科技有限公司协办的邯郸市第一医院心衰中心质量分析会第二次会议隆重召开。",
+            time: "2018年04月27日"
+         },
+         {
+            index: 6,
             title: "李克强主持召开国务院常务会议，确定发展“互联网+医疗健康”措施等 ",
             content: "李克强主持召开国务院常务会议，确定发展“互联网+医疗健康”措施，缓解看病就医难题、提升人民健康水平。",
             time: "2018年04月16日"
@@ -117,33 +140,74 @@ export default class Abouts extends VuexModule {
    get getCompanyNews() {
       return this.CompanyNews;
    }
-   // 行业资讯
-   zx1: string = require('@/assets/images/index/about/zx1.png');
+   // 行业资讯 - 列表
+   zx1: string = require('@/assets/images/index/about/zx1.jpg');
    zx2: string = require('@/assets/images/index/about/zx2.jpg');
-   zx3: string = require('@/assets/images/index/about/zx3.jpg');
+   zx3: string = 'https://mmbiz.qpic.cn/mmbiz_jpg/3HlibjxrqiavlN77F31esHQ6PHgwQhpl8thjumWHLskN7wMyxniazpdcCmMH5s2lIOku3Ib1knWyS8HUO9SZzK1SA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1';
+   zx4: string =  require('@/assets/images/index/about/zx4.jpg');
+   zx5: string =  require('@/assets/images/index/about/zx5.jpg'); 
+   zx6: string = require('@/assets/images/index/about/zx6.png');
+   zx7: string = require('@/assets/images/index/about/zx7.jpg'); 
+   zx8: string = require('@/assets/images/index/about/zx8.jpg'); 
+
    CompanyZX: AboutInterface = {
       title: "行业资讯",
-      list: [
+      list: [ 
+         {
+            index:1,
+            banner: this.zx1,
+            title: "2020 聚焦两会 | 心衰领域带头人葛均波在两会作大会委员发言",
+            content: "2020年5月24日，全国政协十三届三次会议第二次全体会议在人民大会堂举行。",
+            time: "2020年05月25日"
+         }, 
+         {
+            banner: this.zx2,
+            index:2,
+            title: "【聚焦】杨杰孚:像关注癌症一样关注心衰",
+            content: "摘要：心衰是一种进展性疾病，发病率居高不下，五年生存率很低，甚至远低于大部分恶性肿瘤，但是人们对心衰的认识远远不够。十三届全国政协委员、北京医院心脏中心主任杨杰孚教授带来——《我国心衰的真实现状》。",
+            time: "2020年04月31日"
+         },
+         {
+            banner: this.zx4,
+            index:3,
+            title: "心衰相关 | 心脏康复为什么要在康复团队指导下进行？",
+            content: "摘要：康复团队 会根据每一位患者患病种类、疾病程度、营养状况等具体情况 制定个体化的康复方案。",
+            time: "2020年03月16日"
+         },
+         {
+            banner: this.zx8,
+            index:4,
+            title: "中国心衰中心联盟成立，正式吹响心衰防治攻坚号角",
+            content: "摘要：2019年12月27日，在中国心血管健康大会（CCHC 2019）上，在众多奋战在心血管防治前线的嘉宾们的共同见证下，中国心衰中心联盟正式成立和揭牌。",
+            time: "2020年01月03日"
+         },
          {
             banner: this.zx3,
-            index:1,
+            index:5,
+            title: "【科普】关于心衰，你知道多少？",
+            content: "摘要：心脏就像一个永不停止的泵，不断把富有营养的血液泵出，通过动脉送到全身各个器官，再通过静脉回流至心脏。",
+            time: "2019年05月16日"
+         }, 
+         {
+            banner: this.zx5,
+            index:6,
             title: "医联体建设让百姓看病更方便",
             content: "据了解，2015年，呼和浩特市医改办印发《呼和浩特市分级诊疗工作实施方案》， 确定以纵向医疗服务联合体建设为依托，推进分级诊疗工作。",
-            time: "2017年10月16日"
+            time: "2018年10月16日"
          },
          {
-            banner: this.zx1,
-            index:2,
+            banner: this.zx6,
+            index:7,
             title: '"智慧医疗+智慧金融助力公立医院管理变革与智慧应用',
             content: "中新网上海新闻11月9日电（王子涛）“互联网+医疗与综合金融2.0暨AI+云平台新模式推进会”8日在沪召开",
-            time: "2016年11月09日"
+            time: "2018年9月09日"
          },
          {
-            index:3,
-            banner: this.zx2,
+            index:8,
+            banner: this.zx7,
             title: "中国首批心衰中心建设单位授牌暨培训会成功召开",
             content: "2017年12月26日，中华医学会心衰学组在苏州举行中国心衰中心建设单位授牌暨心衰中心建设培训会。",
-            time: "2015年12月15日"
+            time: "2017年12月26日"
          }
       ]
    };
@@ -153,24 +217,55 @@ export default class Abouts extends VuexModule {
    // 详情
    // 公司新闻
    newsImg:string[]=[
-      require('@/assets/images/index/newsDetail/2/1.jpg'),
-      require('@/assets/images/index/newsDetail/2/2.jpg'),
-      require('@/assets/images/index/newsDetail/2/3.jpg'),
-      require('@/assets/images/index/newsDetail/2/4.jpg'),
-      require('@/assets/images/index/newsDetail/2/5.jpg'),
-      require('@/assets/images/index/newsDetail/2/6.jpg'),
-      require('@/assets/images/index/newsDetail/3/1.jpg'), 
-      // 7
-      require('@/assets/images/index/newsDetail/1/1.jpg'),
-      require('@/assets/images/index/newsDetail/1/2.jpg'),
-      require('@/assets/images/index/newsDetail/1/3.jpg'),
-      require('@/assets/images/index/newsDetail/1/4.jpg'),
-      require('@/assets/images/index/newsDetail/1/5.jpg'),
-      require('@/assets/images/index/newsDetail/1/6.jpg'),
-      require('@/assets/images/index/newsDetail/1/7.jpg'),
-      require('@/assets/images/index/newsDetail/1/8.jpg'),
-
-
+      // 公司年会
+      require('@/assets/images/index/newsDetail/gsnh/1.jpg'),
+      require('@/assets/images/index/newsDetail/gsnh/2.jpg'),
+      require('@/assets/images/index/newsDetail/gsnh/3.jpg'),
+      require('@/assets/images/index/newsDetail/gsnh/4.jpg'),
+      require('@/assets/images/index/newsDetail/gsnh/5.jpg'),
+      require('@/assets/images/index/newsDetail/gsnh/6.jpg'),
+      require('@/assets/images/index/newsDetail/gsnh/1.jpg'), 
+      // 7 股东大会
+      require('@/assets/images/index/newsDetail/gddh/1.jpg'),
+      require('@/assets/images/index/newsDetail/gddh/2.jpg'),
+      require('@/assets/images/index/newsDetail/gddh/3.jpg'),
+      require('@/assets/images/index/newsDetail/gddh/4.jpg'),
+      require('@/assets/images/index/newsDetail/gddh/5.jpg'),
+      require('@/assets/images/index/newsDetail/gddh/6.jpg'),
+      require('@/assets/images/index/newsDetail/gddh/7.jpg'),
+      require('@/assets/images/index/newsDetail/gddh/8.jpg'),
+      //15 心衰认证
+      require('@/assets/images/index/newsDetail/xsrz/1.jpg'),
+      require('@/assets/images/index/newsDetail/xsrz/2.jpg'),
+      require('@/assets/images/index/newsDetail/xsrz/3.jpg'),
+      require('@/assets/images/index/newsDetail/xsrz/4.jpg'), 
+   ];
+   // 精彩全纪录！中昊慧达鼎力支持邯郸市心力衰竭2018科学年会
+   newsImgTwo:string[] = [
+      require('@/assets/images/index/newsDetail/hdnh/1.jpg'), 
+      require('@/assets/images/index/newsDetail/hdnh/2.jpg'), 
+      require('@/assets/images/index/newsDetail/hdnh/3.jpg'), 
+      require('@/assets/images/index/newsDetail/hdnh/4.jpg'), 
+      require('@/assets/images/index/newsDetail/hdnh/5.jpg'), 
+      require('@/assets/images/index/newsDetail/hdnh/6.jpg'), 
+      require('@/assets/images/index/newsDetail/hdnh/7.jpg'), 
+      require('@/assets/images/index/newsDetail/hdnh/8.jpg'), 
+      require('@/assets/images/index/newsDetail/hdnh/9.jpg'), 
+      require('@/assets/images/index/newsDetail/hdnh/10.jpg'), 
+      require('@/assets/images/index/newsDetail/hdnh/11.jpg'), 
+      require('@/assets/images/index/newsDetail/hdnh/12.jpg'), 
+      require('@/assets/images/index/newsDetail/hdnh/13.jpg'), 
+      require('@/assets/images/index/newsDetail/hdnh/14.jpg'), 
+      require('@/assets/images/index/newsDetail/hdnh/15.jpg'), 
+      require('@/assets/images/index/newsDetail/hdnh/16.jpg')
+   ];
+   //心衰领域的“排头兵”！中昊慧达心衰随访平台项目获高度评价
+   newsImgThree:string[] = [
+      require('@/assets/images/index/newsDetail/ptb/1.jpg'),  
+      require('@/assets/images/index/newsDetail/ptb/2.jpg'),  
+      require('@/assets/images/index/newsDetail/ptb/3.jpg'),  
+      require('@/assets/images/index/newsDetail/ptb/4.jpg'),  
+      require('@/assets/images/index/newsDetail/ptb/5.jpg') 
    ];
    CompanyNewsDetail: AboutInterface[] = [
       {
@@ -244,31 +339,174 @@ export default class Abouts extends VuexModule {
             `
       },
       {
-         title: "厉害了！中昊益联携手秦皇岛市中医医院实现智慧就医！",
+         title: "厉害了！心衰随访平台获计算机软件著作权登记证书！",
          index: 3,
          html: `
-         <div class='zhhd-about-company-newsDetail-zy'>摘要：6月25日，“中昊医联平台”在秦皇岛市中医医院全面运行！预约挂号、手机缴费、住院预交金、报告查询......实现一站式智慧就医！</div>
+         <div class='zhhd-about-company-newsDetail-zy'>摘要：2018年8月17日，中华人民共和国国家版权局对中昊慧达“心衰随访平台”系统软件进行了知识产权认定登记，并颁发了计算机软件著作权登记证书。</div>
          <div>
-            <h3>如何使用“中昊医联平台”就医？</h3>
-            <div>一、长按下方二维码，关注“中昊医联平台”公众号，体验智慧就医。</div>
-            <div>二、注册账号，完善个人信息</div>
-            <div>关注后，点击【绑定通知】完善个人信息，绑定您的就诊卡/医保卡，将切换机构为秦皇岛市中医医院，然后就能进行移动支付、预约挂号啦~</div>
-            <img src="${this.newsImg[6]}" width='300px'/>
+            <div>2018年8月17日，根据《计算机软件保护条例》和《计算机软件著作权登记办法》的规定，经中国版权保护中心审核，
+            <b>中华人民共和国国家版权局对中昊慧达“心衰随访平台”系统软件进行了知识产权认定登记，并颁发了计算机软件著作权登记证书。</b>
+            </div>
+            <div>
+               <img src="${this.newsImg[18]}" width='100%' />
+            </div>
+            <div><b>中昊慧达心衰随访平台</b>于2018年5月正式上线，目前其人性化和便捷的各项功能设计，受到了业内的普遍好评，此次获得软件著作权登记证书，是对心衰随访平台软件的一种保护，更是对原创软件的一种认可。
+            </div>
          </div>
          <div>
-            <h3>"中昊医疗平台"都有什么功能？</h3>
-            <div>一、预约挂号</div>
-            <div>平台支持预约未来七天号源，于就诊时间前，持患者本人健康卡/医保卡去分诊台取号即可。</div>
-            <div>二、移动支付</div>
-            <div>就诊时医生开具的处方单，检验检查单，将同步到手机上，并可直接缴费。少跑腿，不排队，手机将是你的移动支付平台！</div>
-            <div>三、查询报告</div>
-            <div>河北中昊益联科技发展有限公司 会继续秉承“方便、快捷、高效、安全、严密”的服务理念， 保持昂扬向上、开拓进取的态度，为广大社会公众提供更多高品质、便捷的医疗服务。</div>
+            <h3>获得著作权登记保护有何意义</h3>
+            <div><b>中国版权保护中心对国内各项计算机软件的著作权申请审核是审慎尽责的，心衰随访平台获得计算机软件著作权登记保护，对我们有很大的现实意义。</b></div>
+            <div>
+               <img src="${this.newsImg[16]}" width='100%' />
+            </div>
+            <h3>心衰随访平台是中昊慧达自主研究开发的软件</h3>
+            <div>心衰随访平台自2018年上线以来不断推出创新功能，得到市场的一致认可。软件著作权的登记保护是对心衰随访平台这一原创软件的证明和保护，也是今后软件著作权发生争议时证明软件权利的最有力的证据。</div>
+            <h3>心衰随访平台的内部管理规范、系统安全</h3>
+            <div>中国版权保护中心明确规定，申请计算机软件著作权登记保护需要提交的资料中就包括：源程序，按前、后各连续30页。技术文档，用户手册、操作手册、设计说明书、使用说明书等任选一种，按前、后各连续30页，共60页。心衰随访平台自前期需求调研时期起，至上线后的每月系统更新，都严格规范需求文档、源程序文档、bug文档、操作手册等文件的管理，确保我们的系统在管理规范的内部环境中稳定运行。</div>
+            <h3>中昊慧达心衰随访平台再一次走在了行业前列</h3>
+            <div>事实上，心衰随访平台还是业内第一个满足医院心衰中心的患者管理和业务发展需要，并且贴合中国心衰中心的大数据统计要求的系统。我们还和客户充分互动、倾听客户需求、定期更新优化，响应市场变化。</div>
+            <h3>心衰随访平台的设计愿景</h3>
+            <div>希望通过中昊慧达的技术创新，让医生们在繁重的数据录入工作中解脱出来，以便能有更多的时间去提升学术、去治病救人。</div>
+            <div>
+               <img src="${this.newsImg[17]}" width='100%' />
+            </div>
+            <h3>心衰随访平台    我们更专业 ！</h3>
+            <div style='text-align:center'>长按扫码关注我们</div>
+            <div style='text-align:center'>
+               <img src="${this.newsImg[15]}" width='300px' />
+            </div>
+         </div>
+         `
+      },
+      {
+         title: "精彩全纪录！中昊慧达鼎力支持邯郸市心力衰竭2018科学年会",
+         index: 4,
+         html: `
+         <div class='zhhd-about-company-newsDetail-zy'>摘要：20187月14日，由邯郸市第一医院主办，河北中昊慧达科技有限公司协办的邯郸市心力衰竭2018科学年会在邯郸宾馆迎宾楼金色大厅成功召开。</div>
+         <div>
+            <div>7月14日，由邯郸市第一医院主办，河北中昊慧达科技有限公司协办的<b>邯郸市心力衰竭2018科学年会在邯郸宾馆迎宾楼金色大厅成功召开。</b>
+            </div>
+            <div>
+               <img src="${this.newsImgTwo[0]}" width='100%'/>
+            </div>
+            <h3>电子签到，中昊慧达献上伴手礼</h3>
+            <div>
+               会议签到使用微信小程序，扫一扫，马上签到！为了感谢大家的参会热情，中昊慧达特意准备了小礼物，贴心至极~
+            </div> 
+            <div>
+               <img src="${this.newsImgTwo[1]}" width='100%' />
+            </div>
+         </div>
+         <div>
+            <h3>热烈庆祝邯郸心脏论坛成立12周年</h3> 
+            <div>
+               <img src="${this.newsImgTwo[4]}" width='100%' /> 
+            </div>
+            <div>庆祝邯郸心脏论坛成立12周年，信院长会前发言</div>
+            <div class="zhhd-about-company-newsDetail-content-img">
+               <img src="${this.newsImgTwo[5]}" width='100%' />
+               <img src="${this.newsImgTwo[6]}" width='100%' />
+            </div>
+            <div>专家云集，这是一场真正的学术会议</div>
+            <div>
+               大会荣幸邀请到了国家心衰中心总部、北京阜外医院、解放军总医院、河北医科大学第二医院等心衰领域知名专家，采用问题导向、针对心力衰竭诊疗以及心衰中心建设中的具体问题展开讨论，并设访谈互动环节。
+            </div>
+            <div>
+               <img src="${this.newsImgTwo[7]}" width='100%' /> 
+            </div>
+            <div>河北医科大学第二医院副院长 李拥军教授</div>
+            <div>
+               <img src="${this.newsImgTwo[8]}" width='100%' /> 
+            </div>
+            <div>北京阜外医院  张宇辉教授 </div>
+            <div>
+               <img src="${this.newsImgTwo[9]}" width='100%' /> 
+            </div>
+            <div>解放军总医院  董蔚教授</div>
+            <div>
+               <img src="${this.newsImgTwo[10]}" width='100%' /> 
+            </div>
+            <div>中国心衰中心总部  管小玉教授</div>
+            <div class='zhhd-about-company-newsDetail-content-img'>
+               <img src="${this.newsImgTwo[11]}" width='100%' /> 
+               <img src="${this.newsImgTwo[12]}" width='100%' /> 
+               <img src="${this.newsImgTwo[13]}" width='100%' /> 
+               <img src="${this.newsImgTwo[14]}" width='100%' /> 
+            </div>
+            <div>依次为河北医科大学第二医院刘凡教授、河北省中医院何红涛教授、邯郸市第一医院牛东生硕士、邯郸市第一医院谢志江硕士</div>
+            <h3>产品助力，中昊慧达心衰管理</h3> 
+            <div>会议期间，中昊慧达软件工程师侯丽丽进行主题为《心衰患者随访，信息化管理的实践》的精彩演讲，详细介绍了中昊慧达心衰随访平台这款软件的实践应用。</div>
+            <div>
+               <img src="${this.newsImgTwo[15]}" width='100%' /> 
+            </div>
+            <div>
+                根据中国心衰中心关于患者随访表的填报要求和邯郸市第一医院的患者随访管理的要求，中昊科技独立设计研发了，心衰随访平台管理软件，这也是目前国内最智能化的心衰随访专业管理软件。通过这款软件医院能够高效地完成患者随访管理和数据填报。
+            </div>
+            <div>
+               <img src="${this.newsImg[17]}" width='100%' />
+            </div>
+            <h3>心衰随访平台    我们更专业 ！</h3>
+               <div style='text-align:center'>长按扫码关注我们</div>
+               <div style='text-align:center'>
+                  <img src="${this.newsImg[15]}" width='300px' />
+               </div>
+         </div>
+         `
+      },
+      {
+         title: "心衰领域的“排头兵”！中昊慧达心衰随访平台项目获高度评价！",
+         index: 5,
+         html: `
+         <div class='zhhd-about-company-newsDetail-zy'>摘要：2018年8月17日，中华人民共和国国家版权局对中昊慧达“心衰随访平台”系统软件进行了知识产权认定登记，并颁发了计算机软件著作权登记证书。</div>
+         <div>
+            <div>为支持国家心衰中心建设，规范心衰患者的管理和随访工作， 2018年4月9日，由邯郸市第一医院主办，河北中昊慧达科技有限公司协办的邯郸市第一医院心衰中心质量分析会第二次会议隆重召开。
+            </div>
+            <div>
+               <img src="${this.newsImgThree[0]}" width='100%' />
+            </div>
+            <div>院方信院长、医务科及心内科的相关人员出席会议，
+            中昊慧达技术负责人在会上进行“<b>心衰随访平台</b>”产品展示，获得了院方的高度评价。
+            </div>
+            <div>
+               <img src="${this.newsImgThree[1]}" width='100%' />
+            </div>
+         </div>
+         <div>
+            <h3> 邯郸市第一医院心衰门诊</h3>
+            <div>
+            邯郸市第一医院始建于1950年10月，是一所集医疗、教学、科研、预防、保健和康复为一体的大型现代化综合性三级甲等医院。
+            2017年12月27日邯郸市第一医院正式成为首批“中国心衰中心建设单位”，河北省仅2家医院获批。
+            <b>邯郸市第一医院作为邯郸市唯一一家“中国心衰中心建设单位”，抽调精干力量、权威专家，组成心衰门诊团队，设立专病病房。</b>
+            </div>
+            <div>
+               <img src="${this.newsImgThree[2]}" width='100%' />
+            </div> 
+            <div><b>2018年2月27日，邯郸市第一医院心衰门诊正式开诊</b>，致力于为心衰患者提供更权威更规范的诊断、治疗、随访、管理和康复指导，使心衰患者病情长期保持稳定，降低猝死风险，可以拥有高质量的生活水平。</div>
+            <div>
+               <img src="${this.newsImgThree[3]}" width='100%' />
+            </div> 
+            <h3>中昊慧达心衰随访平台</h3>
+            <div>
+               <img src="${this.newsImgThree[4]}" width='100%' />
+            </div> 
+            <h3>心衰随访平台的设计愿景</h3>
+            <div>希望通过中昊慧达的技术创新，让医生们在繁重的数据录入工作中解脱出来，以便能有更多的时间去提升学术、去治病救人。</div>
+            <div>
+               <img src="${this.newsImgThree[5]}" width='100%' />
+            </div> 
+            <div>
+            作为中国心衰领域的“排头兵”，中昊慧达将协同邯郸市第一医院强力支持心衰中心建设工作的蓬勃发展，为祖国人民的健康事业做出积极贡献，在国际心衰领域发出属于中国人的强有力的声音。
+            </div>
+            <div style='text-align:center'>长按扫码关注我们</div>
+            <div style='text-align:center'>
+               <img src="${this.newsImg[15]}" width='300px' />
+            </div>
          </div>
          `
       },
       {
          title: "李克强主持召开国务院常务会议，确定发展“互联网+医疗健康”措施等",
-         index: 4,
+         index: 6,
          html: `
             <div class='zhhd-about-company-newsDetail-zy'>摘要：李克强主持召开国务院常务会议，确定发展“互联网+医疗健康”措施，缓解看病就医难题、提升人民健康水平。</div>
             <div>
@@ -290,20 +528,231 @@ export default class Abouts extends VuexModule {
    get getCompanyNewsDetail() {
       return this.CompanyNewsDetail;
    }
+   // 资讯图片 
    xzImg:string[] = [
-      require('@/assets/images/index/xzDetail/1/1.jpg'),  
-      require('@/assets/images/index/xzDetail/1/2.jpg'), 
-      require('@/assets/images/index/xzDetail/2/1.png'),  
-      require('@/assets/images/index/xzDetail/2/2.png'), 
-      require('@/assets/images/index/xzDetail/2/3.png'), 
-      require('@/assets/images/index/xzDetail/2/4.png'), 
-      require('@/assets/images/index/xzDetail/2/5.png'), 
-
+      require('@/assets/images/index/xzDetail/zgsp/1.jpg'),  
+      require('@/assets/images/index/xzDetail/zgsp/2.jpg'), 
+      require('@/assets/images/index/xzDetail/zhyl/1.png'),  
+      require('@/assets/images/index/xzDetail/zhyl/2.png'), 
+      require('@/assets/images/index/xzDetail/zhyl/3.png'), 
+      require('@/assets/images/index/xzDetail/zhyl/4.png'),  
+      require('@/assets/images/index/xzDetail/2020/1.jpg'),  
+      "",  
+      "",  
+      require('@/assets/images/index/xzDetail/2020/4.jpg'),   
+   ];
+   //杨姐夫
+   yzfImg:string[] = [
+      require('@/assets/images/index/xzDetail/yjf/1.jpg'),  
+      require('@/assets/images/index/xzDetail/yjf/2.jpg'),  
+      require('@/assets/images/index/xzDetail/yjf/3.jpg'),  
+      require('@/assets/images/index/xzDetail/yjf/4.jpg'),   
+      require('@/assets/images/index/xzDetail/yjf/5.jpg'),    
+   ];
+   // 心衰科普
+   xskpImg:string[] = [
+      require('@/assets/images/index/xzDetail/xskp/1.jpg'),  
+      require('@/assets/images/index/xzDetail/xskp/2.jpg'),  
+      require('@/assets/images/index/xzDetail/xskp/3.jpg'),   
+   ]   
+   // 心脏康复
+   xzkfImg:string[] = [
+      require('@/assets/images/index/xzDetail/xzkf/1.jpg'),   
+   ]
+   // CCHC 
+   CCHCImg:string[] = [
+      require('@/assets/images/index/xzDetail/CCHC/1.jpg'),   
+      require('@/assets/images/index/xzDetail/CCHC/2.jpg'),   
+      require('@/assets/images/index/xzDetail/CCHC/3.jpg'),   
+      require('@/assets/images/index/xzDetail/CCHC/4.jpg'),   
+      require('@/assets/images/index/xzDetail/CCHC/5.jpg'),    
    ];
    CompanyXzDetailList:AboutInterface[] = [
       {
-         title: "医联体建设让百姓看病更方便",
+         title: "2020 聚焦两会 | 心衰领域带头人葛均波在两会作大会委员发言",
          index: 1,
+         html: `
+         <div class='zhhd-about-company-newsDetail-zy'>摘要：2020年5月24日，全国政协十三届三次会议第二次全体会议在人民大会堂举行，九三学社上海市副主委，复旦大学生物医学研究院院长，中国科学院院士葛均波代表九三学社中央以弘扬新时代科学家精神为建设科技强国汇聚磅礴力量为题作大会委员发言。</div>
+         <div> 
+            <div>
+               <img src="${this.xzImg[6]}" width='100%' />
+            </div>
+            <div>2020年5月24日，全国政协十三届三次会议第二次全体会议在人民大会堂举行，九三学社上海市副主委，复旦大学生物医学研究院院长，中国科学院院士葛均波代表九三学社中央以弘扬新时代科学家精神为建设科技强国汇聚磅礴力量为题作大会委员发言。</div>
+            <div>葛均波院士：
+            中国科学院院士、长江学者、教授、博士生导师。现任中国医师协会心血管分会会长，中国心血管健康联盟主席，复旦大学附属中山医院心内科主任，上海市心血管临床医学中心主任，上海市心血管病研究所所长，安徽省立医院院长，复旦大学生物医学研究院院长，复旦大学泛血管医学研究院院长，复旦大学泛血管基金理事长，教育部“心血管介入治疗技术与器械”工程研究中心主任，中国医学科学院学部委员、美国心血管造影和介入学会理事会理事，美国心脏病学会国际顾问，世界心脏联盟常务理事，世界华人心血管医师协会荣誉会长、美国哥伦比亚大学客座教授。
+            </div>
+            <div>
+               <img src="${this.xzImg[9]}" width='100%' />
+            </div>
+            <div>新冠肺炎疫情暴发后，我国科学家很快查明病原并分享基因序列，赢得世界赞誉；大数据助力疫情防控；嫦娥四号登陆月背……中共十八大以来，中共中央把科技创新摆在国家发展全局的重要位置，科技领域取得了一大批重大成果。当前我国科技事业正处于最好发展时期，但仍然面临一些问题和挑战。急功近利、浮躁浮夸、“圈子”文化等现象还时有发生，科技领域作风和学风建设任重道远。</div>
+               <div>去年6月，中办、国办印发《关于进一步弘扬科学家精神加强作风和学风建设的意见》，激励科学家群体自觉践行爱国、创新、求实、奉献、协同、育人的新时代科学家精神。新时代为科技工作者提供了建功立业的良好机遇，弘扬科学家精神正当其时、正当其势。</div>
+               <div>今年是全面建成小康社会和“十三五”规划收官之年，要实现第一个百年奋斗目标，为“十四五”发展和实现第二个百年奋斗目标打好基础，迫切需要科技工作者担当起新时代赋予的光荣使命。当前，技术创新作为推动复工复产、保障经济平稳运行、做好“六稳”、落实“六保”的重要支撑，尤需在四个方面着力。</div>
+            </div>
+         <div> 
+            <h3>激励科技工作者勇攀高峰、敢为人先，胸怀祖国、服务人民。</h3>
+            <div>程开甲院士说：“我这辈子最大的幸福，就是自己所做的一切，都和祖国紧紧地联系在一起。”研当以报效国家为己任，学必以服务人民为荣光。应坚定不移地坚持党对科技事业的领导，引导广大科技工作者更加紧密地团结在以习近平同志为核心的中共中央周围，坚持问题导向，直面社会需求、紧跟国家战略，牢固树立正确的科技价值观，把论文写在祖国大地上和伟大斗争中。疫情终有尽时，科学未有穷期，应把人民群众生命安全和身体健康放在首位，把中央的决策部署转化为科技界的自觉行动，尽快补足研发应用等短板；加强科学普及，推动全民科学素质全面提升。</div>
+            <h3>激励科技工作者追求真理、严谨治学，淡泊名利、潜心研究。</h3> 
+            <div>2018年度国家科技奖获奖项目，立项到结题平均为11.4年，从结题到提名间隔4.4年。每一项国家科技奖背后，都是科学家们平均16年的“坐冷板凳”。有关部委已发文破除“SCI至上”，但破解制约发展的关键科学问题的支撑能力和评价标准问题仍待解决。要完善与基础研究特点相适应的保障、评价和激励机制，加大高校和科研机构保障性经费拨付力度，建立稳定支持自由探索的机制，让“板凳甘坐十年冷”的专注得到更多褒奖，促进形成踏实苦干、勇攀高峰的氛围。</div>
+            <h3>激励科技工作者甘为人梯、奖掖后学，集智攻关、团结协作。</h3> 
+            <div>科技事业发展中科学家们大力协同、集智攻关，形成的“两弹一星”精神、载人航天精神彪炳史册。疫情发生后，钟南山、李兰娟等院士“逆行”而上，包括“90后”科技人员在内的科技工作者各尽所长，始终奋战在最前线。应发扬老一辈科学家甘为人梯、提携后辈精神，重视人才队伍培养，实施青年科技人才托举工程，帮助他们牢记使命、加强协同、成就事业。</div>
+            <h3>进一步健全激励科技工作者干事作为的体制机制。</h3> 
+            <div>正因充分发挥“集中力量办大事”的举国体制优势，邓稼先等科学家研制“两弹”才能取得成功，疫情防控阻击战才能取得重大战略成果。近年来，一些束缚创新的重点领域和关键环节改革取得实质性进展。应尊重科技工作者科研活动主体地位，进一步补齐科研管理短板，创新支持方式，加大基础研究、跨学科研究激励力度，提升科技工作者获得感，切实发挥创新驱动、科技引领作用，把科技生产力充分释放出来。</div>
+         </div>
+         `
+      }, 
+      {
+         title: "【聚焦】杨杰孚:像关注癌症一样关注心衰",
+         index: 2,
+         html: `
+         <div class='zhhd-about-company-newsDetail-zy'>摘要：心衰是一种进展性疾病，发病率居高不下，五年生存率很低，甚至远低于大部分恶性肿瘤，但是人们对心衰的认识远远不够。十三届全国政协委员、北京医院心脏中心主任杨杰孚教授带来——《我国心衰的真实现状》。</div>
+         <div>
+            <div>心衰是一种进展性疾病，发病率居高不下，五年生存率很低，甚至远低于大部分恶性肿瘤，但是人们对心衰的认识远远不够。十三届全国政协委员、北京医院心脏中心主任杨杰孚教授带来——《我国心衰的真实现状》。</div>
+            <h3>杨杰孚  北京医院心内科主任</h3>
+            <div>十三届全国政协委员、中华医学会心血管病分会常委、心衰学组组长、已独立完成心律失常介入治疗手术5000多例、植入器械成功率100%</div>
+            <h3>心衰的含义</h3>
+            <div>心力衰竭简称心衰，简单的说，就是心脏的收缩和（或）舒张功能发声障碍，造成排血量不足，从而引起各个器官供血不足，造成心脏循环障碍症。心衰并不是一个独立的疾病，而是心脏病发展的终末阶段。心衰越早治疗效果越好，否则会给心脏带来不可逆的损伤。</div>
+            <div>
+               <img src="${this.yzfImg[0]}" width='100%' />
+            </div>
+               <h3>医学在进步，心衰的发生率为什么还在增高？</h3>
+               <div>随着人口老龄化日渐加重，心衰作为老年人的常见疾病显现出增长趋势；</div>
+               <div>心衰是所有的心血管疾病发展到中晚期的最终结局。曾经，那些危及生命的冠心病、心梗现在都能得到挽救，但却遗留下各种心肌永久损害，终究会发展成心衰。</div>
+               <h3>如癌症般可怕，却被忽视的心衰</h3> 
+               <div>
+               <img src="${this.yzfImg[1]}" width='100%' />
+               </div> 
+               <div>从图表可见，中国心衰患者五年生存率与癌症相近，但普遍对心衰的重视不够，片面的认为只是“心脏不好”而已。事实上，不同类型的癌症预后差别迥异，心衰也是一样，从A到D不同阶段的心衰预后完全不同。</div>
+               <div>
+               <img src="${this.yzfImg[2]}" width='100%' />
+               </div>   
+            <div>A阶段（早期）心脏的结构和功能正常，如果在这段时间进行控制，就有可能防止心衰的发生；</div>
+            <div>B阶段心脏已经发生改变，即高血压引起左心室肥厚，但是心脏功能正常，射血分数正常，合理用药能预防心脏结构的进一步恶化或者逆转；</div>
+            <div>然而，A-B阶段患者往往忽视症状，在我国，一般就医治疗的基本都到了C-D阶段，2015年美国心衰学会（HFSA）发表的共识中将晚期（D阶段）心衰定义为：尽管接受了最佳药物、手术和器械治疗，仍然出现进展和/或持续的严重心衰体征和症状。欧美指南中，晚期（D阶段）心衰的定义和诊断标准存在差异；我国心衰指南中将D阶段心衰称为终末期心力衰竭或难治性心力衰竭。</div>
+            <h3>我国心衰的诊疗现状</h3> 
+            <div>近年来，心衰在中国的发生率和死亡率不断增高，但是大众的防范意识还是很淡薄。主动去医院接受诊疗的只有两种人，有既往心脏病史的患者，或者已经出现严重症状的患者。</div>
+            <div>
+            <img src="${this.yzfImg[3]}" width='100%' />
+            </div>    
+            <div>而要做到对心衰的有效诊疗，患者和医生应该加强常规检查的力度和频次，主要工具为BNP，NT-proBNP和超声心动图。对于心衰来说，检查是排除性诊断的过程，有时不检查甚至等于误诊，误诊则会带来误治。
+            </div>
+            <h3>心衰如何规范化管理</h3> 
+            <div style='text-align:center'>
+               <img src="${this.yzfImg[4]}" width='100%' />
+            </div>
+            <div>杨杰孚教授牵头的中国心衰规范化管理中心项目，从提高国家整体心衰防控水平上着手，制定规范化诊疗标准，让三甲医院带头解决难度较高的急性心衰，二级医院侧重心衰的长期管理，三甲医院带动二级医院，最终实现同质化治疗，为实现医疗资源的合理配置、推动心衰防治工作起到了非常重要的作用。</div>
+         </div>
+         `
+      },
+      {
+         title: "心衰相关 | 心脏康复为什么要在康复团队指导下进行？",
+         index: 3,
+         html: `
+         <div class='zhhd-about-company-newsDetail-zy'>摘要：康复团队 会根据每一位患者患病种类、疾病程度、营养状况等具体情况 制定个体化的康复方案。</div>
+         <div>
+            <h3>心脏康复要在康复团队指导下进行 </h3> 
+            <div>
+               <img src="${this.xzkfImg[0]}" width='100%' />
+            </div>  
+            <div>康复团队 会根据每一位患者患病种类、疾病程度、营养状况等具体情况 制定个体化的康复方案。比如：医生开具个体化药物处方、营养师制定个体化营养处方、运动康复训练师与医生根据患者运动心肺功能检测结果共同制定个体化运动处方、心理咨询师制定个体化心理处方等。</div> 
+            <div>安全性和有效性是心脏康复的基本原则，运动强度不足达不到康复效果，运动强度过大导致血乳酸浓度增加、儿茶酚胺过度释放、血钾降低，从而诱发心绞痛或心衰，甚至导致运动性猝死的发生。中、高危患者应在遥测心电监护下进行，保证患者在运动中的血压、心率、METS值接近或低于无氧阈时各项指标，最大限度保证康复过程安全、有效。</div>
+            <h3>体外反搏康复病例</h3>
+               <div>康复病例1   患者杨某，男，65岁，10年前被诊断为扩心病心衰。在北京某医院植入埋藏式心律转复除颤仪。治疗无效，遂转入邯郸市第一医院东区心脏康复中心。在药物治疗的基础上给予以体外反搏为核心的心脏康复治疗，住院4天后食欲增加，精神状态明显好转，不仅可以自行下床无胸闷气喘症状，而且可以慢走， 10天后患者精神大增体力明显增加，可以做4个Mets的踏车运动；完成36次一个疗程，复查心脏彩超射血分数由入院前的30%增加至41％，心功能明显改善。 </div>
+               <div>病情机理：1.体外反搏对于久病卧床的患者在不增加心肌耗氧量的同时，增加了腿部的前向和逆向血流速度，锻炼了下肢肌群，使骨骼肌的力量增强；2.体外反搏在增加心脑肾供血的同时，也增加了胃肠道的供血，促进了消化吸收功能以及加强胃肠动力，使食欲改善、便秘改善。</div>
+               <div>康复病例2   患者董某某，64岁，在耳鼻喉科诊断为：突发性耳聋40天。内科治疗没有任何效果，抱着试试看的态度行体外反搏治疗，25次后患者听力完全恢复！</div>
+               <div>病情机理：突发性耳聋是一种突然自发的感音神经性耳聋，耳鼻喉科常见病。该病的病因学说甚多，有病毒学说，内耳血液循环障碍，植物神经功能紊乱，代谢障碍，电解质紊乱等等，但内耳的供血、供氧障碍是本病的发病中心环节，故改善内耳的血液微循环，促进局部血供、氧供及能量供应则是治疗本病的关键。体外反搏可增加脑动脉的血流灌注，改善脑循环，其必然也可改善内耳的血供，从而发挥良好的治疗作用。 </div>
+               <div>康复病例3   宁老先生，79岁，高血压病史50年。于3年前因活动性胸闷、气短，就诊于邯郸市第一医院，诊断为“冠心病 恶化劳力型心绞痛”，行冠脉支架术，分别于前降支、右冠各植入支架1枚，术后3年来按时服用“阿司匹林肠溶片、波立维”等药物。于半月前，再发活动性胸闷，患者活动数十米即出现上述症状，影响日常生活，故收入院 。入院当天患者上下1层楼即发生心绞痛，发作当时心电图提示：I、aVL、V2-6导联ST-T压低，深倒置改变。入院后药物治疗基础上给予心肺运动评估、6分钟步行试验、营养指导以及体外反搏改善心肌供血、建立侧枝循环等康复措施。此后再无心绞痛发作。1疗程治疗结束时患者快走3000米无心绞痛发作，精神体力大为改善。心电图可见神奇的变化：入院时广泛的ST-T压低、倒置逐步减轻，出院时ST段回至基线水平，倒置的T波已经变为直立。宁老先生高兴地竖起大拇指称赞！至今该患者出院已经2年余，一切日常及户外活动均无心绞痛发作！  </div>
+               <div>康复病例4   患者郭某某，41岁，临漳人，主因发作性胸闷、心悸伴恶心、呕吐1年，加重1周入院。患者20年前摔伤头部，遗留发作性睡病，夜间不能入睡，白天极度困倦甚至吃饭过程就能睡着。高血压病史3年，血压难以控制。给予药物治疗的基础上+体外反搏+康复运动疗法。治疗一周后睡眠改善，精神状态改善；治疗12天后脸色红润，便秘改善，15天出院，睡眠良好，血压正常。患者住院第5天，失眠改善，精神状态已大为好转。</div>
+               <div>体外反搏治疗 是一种无创、安全、经济、有效、绿色、自然的物理生物学疗法。它在心脏休息时（即心脏舒张期）对包裹在小腿、大腿及臀部的三组气囊序贯式加压，将双下肢的动脉血驱返到主动脉中，以达到在心脏休息时为人体提供第二次血供的目的，可表现为“一次心跳，两次脉搏、双倍血供”的惊人现象，故在显著提高心脏冠状动脉灌注的同时增加脑、肾、肢体、胃肠等脏器血液灌注，几乎可以治疗一切缺血性疾病，是“冠心病、高血压、心衰、糖尿病、脑血管及后遗症”等缺血性疾病药物治疗、介入治疗之外的又一个不可或缺的有力武器！</div>
+         </div>
+         ` 
+      },
+      {
+         title: "中国心衰中心联盟成立，正式吹响心衰防治攻坚号角",
+         index: 4,
+         html: `
+         <div class='zhhd-about-company-newsDetail-zy'>摘要：2019年12月27日，在中国心血管健康大会（CCHC 2019）上，在众多奋战在心血管防治前线的嘉宾们的共同见证下，中国心衰中心联盟正式成立和揭牌。</div>
+         <div>  
+            <div>2019年12月27日，在中国心血管健康大会（CCHC 2019）上，在众多奋战在心血管防治前线的嘉宾们的共同见证下，中国心衰中心联盟正式成立和揭牌。</div>
+            <div>
+               <img src="${this.CCHCImg[0]}" width='100%' />
+            </div>
+            <div>心力衰竭是所有心血管疾病的终末阶段，当前我国心衰诊疗面临着不规范、不达标、缺管理等诸多严峻挑战。应对挑战，中国心血管健康联盟发起中国心衰中心建设，两年以来心衰中心在全国稳步推进，截至目前注册单位超过1000家，认证单位250家，正在初步构建心衰分级诊疗区域协同体系；2019年5月，国家两部委正式发布《心力衰竭分级诊疗技术方案》，这为心衰中心建设指明了发展方向，心衰中心的建设也将推动我国心衰分级诊疗体系逐渐健全和完善。</div>  
+            <div>为团结各方力量，整合优势资源，推动体系创新，实现心衰分级诊疗，全面提升心衰综合防控水平，维护患者健康，助力健康中国行动，在国家卫生健康委医政医管局的指导和支持下，北京医院牵头联合17家发起单位和20个心衰中心省级联盟共同发起中国心衰中心联盟。</div>
+            <div>
+               <img src="${this.CCHCImg[1]}" width='100%' />
+            </div>
+            <div>国家卫生健康委员会医政医管局医疗资源处处长 王毅</div>  
+            <div>王毅在致辞中表示，目前我国心血管疾病发病率高，死亡率高，心血管患者数量逐年增加，对医疗服务的需求也逐年递增，这要求我们需进一步加强专科建设，提高医疗服务水平。按照“推进健康中国建设，实施健康中国战略”的总要求和总部署，国家医政医管局全力支持胸痛中心联盟、心衰中心联盟的建设。此次，成立心衰中心联盟，相信能够加速推进我国心衰协同救治网络体系的建设。</div>
+            <div>同时，王毅对中国心衰中心联盟提出了四点要求：
+            一、一定要同各级卫生健康行政部门密切协作，以推进分级诊疗制度建设和改善医疗服务为契机，积极同各级卫生健康行政部门获取支持；
+            二、严格设立准入机制，建立相应的质控平台；
+            三、做好健康知识宣教，提升人民群众的防治和自救意识，提高疾病认知和自我健康管理的意识；
+            四、中国心衰中心联盟要定期向医政医管局提交工作报告。</div>
+            <div >杨杰孚教授全面讲述了中国心衰中心联盟成立的背景、意义和目标。未来中国心衰中心联盟需更全面、细致的推进心衰中心建设，集中力量落实以患者为中心，以指南为依据，推行规范化诊疗；切实推动心衰分级诊疗制度落地，构建心衰区域协同救治体系；进一步完善认证体系，促进各级医院 “同质化”发展；推动地市级心衰联盟的成立；推动信息化和质控平台建设；深化培训，关注健康教育。</div>
+            <div>
+            中国心衰中心联盟名誉主席葛均波院士、霍勇教授、主席杨杰孚教授等嘉宾为发起单位和专家委员会成员颁发证书。
+            </div>
+            <div>
+               <img src="${this.CCHCImg[2]}" width='100%' />
+            </div>
+            中国心衰中心联盟颁发顾问和主席证书
+            <div>
+               <img src="${this.CCHCImg[3]}" width='100%' />
+            </div>
+            中国心衰中心联盟为17家发起单位颁发证书
+            <div>
+               <img src="${this.CCHCImg[4]}" width='100%' />
+            </div>
+            <div>在成立大会上，中国心衰中心联盟杨杰孚教授、李为民教授、廖玉华教授、董吁钢教授、李新立教授和周京敏教授带领全体心衰同仁进行了简短而又庄严的“心衰战场，携手同航”的誓师！</div>
+         </div>
+         `
+      },
+      {
+         title: "【科普】关于心力衰竭，你知道多少？",
+         index: 5,
+         html: `
+         <div class='zhhd-about-company-newsDetail-zy'>摘要：心脏就像一个永不停止的泵，不断把富有营养的血液泵出，通过动脉送到全身各个器官，再通过静脉回流至心脏。</div>
+         <div>
+            <h3>什么是心力衰竭</h3>
+            <div>心脏就像一个永不停止的泵，不断把富有营养的血液泵出，通过动脉送到全身各个器官，再通过静脉回流至心脏。</div>
+            <div>
+               <img src="${this.xskpImg[0]}" width='100%' />
+            </div>  
+            <div>当泵本身故障或老化，或回心的血量短时间明显增加，使心脏应接不暇，或者向外泵血时阻力过高，都会影响心脏泵功能，引起心排血量减少，不能满足机体代谢的需要。器官、组织血液灌注不足，就出现了心力衰竭。它是一种渐进性疾病，呈进行性发展，常是各种心脏病变的终末阶段，为大多数心血管疾病的最终归宿，也是最主要的死亡原因。</div> 
+               <h3>心力衰竭的病因</h3>
+            <div>
+               <img src="${this.yzfImg[1]}" width='100%' />
+            </div> 
+               <div>● 原发性心肌损害</div>
+               <div>各种心脏病如冠心病、高血压病、心肌病，心脏瓣膜病，先天性心脏病。</div>
+               <div>● 心脏负荷过度</div>
+               <div>（1）压力负荷过度：又称后负荷过度，是指心脏在收缩时所承受的阻抗负荷增加。如主动脉狭窄。</div>
+               <div>（2）容量负荷过度：又称前负荷过度，是指心脏舒张期所承受的容量负荷过大。如：输液量过大。</div>
+               <h3>心力衰竭检查及治疗</h3> 
+               <div>1、心电图 </div>
+               <div>2、胸部x光片  </div>
+               <div>3、超声心动图</div>
+               <div>4、心衰标志物等</div>
+               <div>
+               <img src="${this.yzfImg[2]}" width='100%' />
+            </div> 
+               <div>(1)基本病因的治疗：对所有可能导致心脏功能受损的常见疾病如高血压、冠心病、糖尿病、代谢综合征等，在尚未造成心脏器质性改变前应早期进行有效的治疗。对于少数病因未明的疾病如原发性扩张型心肌病等亦应早期干预，从病理生理层面延缓心室重塑过程。</div>
+               <div>病因治疗的最大障碍是发现和治疗过晚，很多患者常满足于短期治疗缓解症状，拖延时日终至发展为严重的心力衰竭失去了治疗的时机。</div>
+               <div>(2)消除诱因：积极控制感染，治疗心律失常、甲亢等。</div>
+               <h3>心力衰竭患者注意事项</h3> 
+            <div> ● 坚持用药：长期口服药物治疗是维持病情稳定、降低不良心血管风险的关键措施。若病情发生变化，应及时就诊，不要自行改变药物治疗方案。</div>
+            <div> ●  运动锻炼：适宜的运动训练对于改善慢性心衰患者生活质量与预后至关重要。步行、骑车、太极拳等均是较好的运动方式。运动量因人而异，一般以不诱发心慌、气短、胸闷等不适症状为宜。</div>
+            <div> ● 合理饮食：多数心衰患者需要限制食盐摄入，按医生根据病情做出的限制食盐摄入的建议摄入，还包括饮食量、饮食结构、饮水量等。</div>
+            <div> ● 自我监测病情：若出现疲乏加重、运动耐力降低、心率增加≥15～20次/分、活动后气急加重、水肿再现或加重、体重增加等情况，很可能提示病情加重，需及时就诊。</div>
+            <div> ●  定期随访：慢性心衰患者在接受药物治疗期间，需要定期到医院随访评估。病情平稳的患者可3~6个月随访一次。病情有变化时随时就诊。</div>    
+            <div>而要做到对心衰的有效诊疗，患者和医生应该加强常规检查的力度和频次，主要工具为BNP，NT-proBNP和超声心动图。对于心衰来说，检查是排除性诊断的过程，有时不检查甚至等于误诊，误诊则会带来误治。
+            </div>
+         </div>
+         ` 
+      },
+      {
+         title: "医联体建设让百姓看病更方便",
+         index:6,
          html: `
          <div class='zhhd-about-company-newsDetail-zy'>摘要：据了解，2015年，呼和浩特市医改办印发《呼和浩特市分级诊疗工作实施方案》， 确定以纵向医疗服务联合体建设为依托，推进分级诊疗工作。</div>
          <div> 
@@ -322,7 +771,7 @@ export default class Abouts extends VuexModule {
       },
       {
          title:'智慧医疗+智慧金融 助力公立医院管理变革与智慧应用',
-         index:2,
+         index:7,
          html:`
          <div class='zhhd-about-company-newsDetail-zy'>摘要：中新网上海新闻11月9日电(王子涛)“互联网+医疗与综合金融2.0暨AI+云平台新模式推进会”8日在沪召开</div>
          <div> 
@@ -354,7 +803,7 @@ export default class Abouts extends VuexModule {
       },
       {
          title:" 中国首批心衰中心建设单位授牌暨培训会成功召开",
-         index:3,
+         index:8,
          html:`
          <div class='zhhd-about-company-newsDetail-zy'>摘要：2017 年12月26日，中华医学会心衰学组在苏州举行中国心衰中心建设单位授牌暨心衰中心建设培训会。</div>
          <div> 

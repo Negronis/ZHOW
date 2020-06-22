@@ -73,7 +73,7 @@ export default class Headers extends VuexModule{
                linkname:"about"
             },
             {
-               name:"行业新闻",
+               name:"公司新闻",
                parent:true,
                link:"/about",
                select:'news',

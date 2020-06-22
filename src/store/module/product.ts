@@ -2,7 +2,7 @@ import {Module , VuexModule , Mutation } from 'vuex-module-decorators';
 import ProductList from '@/interface/interface_product';
 @Module
 export default class Product extends VuexModule{
-	Yilianti:string = require('../../assets/images/index/product/APP.png');
+	Yilianti:string = require('../../assets/images/index/product/APP.jpg');
 	Yitiji:string = require('../../assets/images/index/product/yitiji.png');
 	Zhihui:string = require('../../assets/images/index/product/zhihuiyiliao.png');
 	Jiqiren:string = require('../../assets/images/index/product/zhinengjiqiren.png');
