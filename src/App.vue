@@ -18,7 +18,27 @@ export default class App extends Vue {
     window.onresize = ()=>{ 
       func();
       func_com();
+    }
+    this.InitRouter();
+  }
+  num:number = 0;
+  InitRouter(){
+    let href = location.href;
+    let queryString = href.slice(href.lastIndexOf('=')+1,);
+    if(queryString){
+      let queryArr = ['company','news','information','xssf','ylt','ytj','zhyl','dzjqr'];
+      queryArr.forEach((e:string)=>{
+        if(queryString == e){ 
+          if(localStorage.getItem('changeStr') != e || localStorage.getItem('changeStr') == undefined){
+            localStorage.setItem('changeStr',e); 
+            location.reload();
+          }else{
+            return;
+          }
+        }
+      })
     } 
+    console.log(queryString);
   }
   ChangeHeight() {  
     store.commit("setHeight", window.innerHeight);
@@ -34,6 +54,10 @@ export default class App extends Vue {
         }
       }
       store.commit('setType',true);
+  }
+  @Watch('$route')
+  changeRouter(){ 
+    this.InitRouter();
   }
 }
 </script>

@@ -98,39 +98,44 @@ export default class Abouts extends VuexModule {
    CompanyNews: AboutInterface = {
       title: "公司新闻",
       list: [
-
          {
             index: 1,
+            title: "优秀！中昊慧达助力邯郸市第一医院斩获心衰中心建设质控全国第一",
+            content: "6月20日，河北心衰中心联盟举办了2020河北心衰中心联盟质控网络视频会议。会上公布了2020年1—4月份心衰中心建设质控情况，邯郸市第一医院心衰中心建设质控表现卓越，质控分值得到110高分，质控排名取得“全国第一、河北第一”的双冠优异佳绩。",
+            time: "2020年06月29日"
+         },
+         {
+            index: 2,
             title: "中昊科技&格林布瑞股权分红激励启动大会暨一期授权仪式顺利召开",
             content: "2020年5月22日下午，中昊科技&格林布瑞股权分红激励大会隆重召开。会议旨在对两个公司优秀员工代表进行股权分红激励，实现员工与公司同心同行，共赢未来！",
             time: "2020年05月22日"
          },
          {
-            index: 2,
+            index: 3,
             title: '"只争朝夕·不负韶华" | 中昊科技2020年会圆满举行',
             content: "2019年1月3日下午，中昊科技召开年终工作总结会议。会上营销部刘守鹏、研发部冯涛、维保部张宏大、运维部赵向彬、行政部侯丽丽等中层管理人员陆续作了工作总结， 回顾了2019年的工作完成情况，制定了2020年的工作计划和目标。公司总结题杨建忠发表讲话，对员工的付出给予了肯定，同时展望了未来！",
             time: "2019年01月03日"
          },
          {
-            index: 3,
+            index: 4,
             title: "厉害了！心衰随访平台获计算机软件著作权登记证书",
             content: "2018年8月17日，根据《计算机软件保护条例》和《计算机软件著作权登记办法》的规定，经中国版权保护中心审核，中华人民共和国国家版权局对中昊慧达“心衰随访平台”系统软件进行了知识产权认定登记，并颁发了计算机软件著作权登记证书。",
             time: "2018年08月25日"
          },
          {
-            index: 4,
+            index: 5,
             title: "精彩全纪录！中昊慧达鼎力支持邯郸市心力衰竭2018科学年会",
             content: "2018年7月14日，由邯郸市第一医院主办，河北中昊慧达科技有限公司协办的邯郸市心力衰竭2018科学年会在邯郸宾馆迎宾楼金色大厅成功召开。",
             time: "2018年07月23日"
          },
          {
-            index: 5,
+            index: 6,
             title: "心衰领域的“排头兵”！中昊慧达心衰随访平台项目获高度评价！",
             content: "2018年4月9日，由邯郸市第一医院主办，河北中昊慧达科技有限公司协办的邯郸市第一医院心衰中心质量分析会第二次会议隆重召开。",
             time: "2018年04月27日"
          },
          {
-            index: 6,
+            index: 7,
             title: "李克强主持召开国务院常务会议，确定发展“互联网+医疗健康”措施等 ",
             content: "李克强主持召开国务院常务会议，确定发展“互联网+医疗健康”措施，缓解看病就医难题、提升人民健康水平。",
             time: "2018年04月16日"
@@ -143,9 +148,9 @@ export default class Abouts extends VuexModule {
    // 行业资讯 - 列表
    zx1: string = require('@/assets/images/index/about/zx1.jpg');
    zx2: string = require('@/assets/images/index/about/zx2.jpg');
-   zx3: string = 'https://mmbiz.qpic.cn/mmbiz_jpg/3HlibjxrqiavlN77F31esHQ6PHgwQhpl8thjumWHLskN7wMyxniazpdcCmMH5s2lIOku3Ib1knWyS8HUO9SZzK1SA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1';
-   zx4: string =  require('@/assets/images/index/about/zx4.jpg');
-   zx5: string =  require('@/assets/images/index/about/zx5.jpg'); 
+   zx3: string = require('@/assets/images/index/about/zx3.jpg');
+   zx4: string = require('@/assets/images/index/about/zx4.jpg');
+   zx5: string = require('@/assets/images/index/about/zx5.jpg'); 
    zx6: string = require('@/assets/images/index/about/zx6.png');
    zx7: string = require('@/assets/images/index/about/zx7.jpg'); 
    zx8: string = require('@/assets/images/index/about/zx8.jpg'); 
@@ -267,10 +272,24 @@ export default class Abouts extends VuexModule {
       require('@/assets/images/index/newsDetail/ptb/4.jpg'),  
       require('@/assets/images/index/newsDetail/ptb/5.jpg') 
    ];
+   //优秀！中昊慧达助力邯郸市第一医院斩获心衰中心建设质控全国第一
+   yxImg:string[] = [
+      require('@/assets/images/index/newsDetail/hdfirst/hdfirst.png')
+   ];
    CompanyNewsDetail: AboutInterface[] = [
       {
-         title:" 中昊科技&格林布瑞股权分红激励启动大会暨一期授权仪式顺利召开",
+         title:"优秀！中昊慧达助力邯郸市第一医院斩获心衰中心建设质控全国第一",
          index:1,
+         html:`
+         <div class='zhhd-about-company-newsDetail-zy'> 6月20日，河北心衰中心联盟举办了2020河北心衰中心联盟质控网络视频会议。会上公布了2020年1—4月份心衰中心建设质控情况，邯郸市第一医院心衰中心建设质控表现卓越，质控分值得到110高分，质控排名取得“全国第一、河北第一”的双冠优异佳绩。</div>
+         <div style='text-align:center'>
+            <img width='100%' src="${this.yxImg[0]}" />
+          </div>
+         `
+      },
+      {
+         title:" 中昊科技&格林布瑞股权分红激励启动大会暨一期授权仪式顺利召开",
+         index:2,
          html:`
          <div class='zhhd-about-company-newsDetail-zy'> <b>摘要：</b>2020年5月22日下午，中昊科技&格林布瑞股权分红激励大会隆重召开。会议旨在对两个公司优秀员工代表进行股权分红激励，实现员工与公司同心同行，共赢未来！</div>
          <div>
@@ -311,7 +330,7 @@ export default class Abouts extends VuexModule {
       },
       {
          title:'"只争朝夕·不负韶华" | 中昊科技2020年会圆满举行',
-         index:2,
+         index:3,
          html:`
          <div class='zhhd-about-company-newsDetail-zy'>摘要：2019年1月3日下午，中昊科技召开2019年终工作总结会议。随后傍晚时分，公司2020年会隆重举行。公司总经理杨建忠、公司的中层管理干部、各部门员工欢聚一堂，共度联欢</div>
          <div> 
@@ -340,7 +359,7 @@ export default class Abouts extends VuexModule {
       },
       {
          title: "厉害了！心衰随访平台获计算机软件著作权登记证书！",
-         index: 3,
+         index: 4,
          html: `
          <div class='zhhd-about-company-newsDetail-zy'>摘要：2018年8月17日，中华人民共和国国家版权局对中昊慧达“心衰随访平台”系统软件进行了知识产权认定登记，并颁发了计算机软件著作权登记证书。</div>
          <div>
@@ -380,7 +399,7 @@ export default class Abouts extends VuexModule {
       },
       {
          title: "精彩全纪录！中昊慧达鼎力支持邯郸市心力衰竭2018科学年会",
-         index: 4,
+         index: 5,
          html: `
          <div class='zhhd-about-company-newsDetail-zy'>摘要：20187月14日，由邯郸市第一医院主办，河北中昊慧达科技有限公司协办的邯郸市心力衰竭2018科学年会在邯郸宾馆迎宾楼金色大厅成功召开。</div>
          <div>
@@ -455,7 +474,7 @@ export default class Abouts extends VuexModule {
       },
       {
          title: "心衰领域的“排头兵”！中昊慧达心衰随访平台项目获高度评价！",
-         index: 5,
+         index: 6,
          html: `
          <div class='zhhd-about-company-newsDetail-zy'>摘要：2018年8月17日，中华人民共和国国家版权局对中昊慧达“心衰随访平台”系统软件进行了知识产权认定登记，并颁发了计算机软件著作权登记证书。</div>
          <div>
@@ -506,7 +525,7 @@ export default class Abouts extends VuexModule {
       },
       {
          title: "李克强主持召开国务院常务会议，确定发展“互联网+医疗健康”措施等",
-         index: 6,
+         index: 7,
          html: `
             <div class='zhhd-about-company-newsDetail-zy'>摘要：李克强主持召开国务院常务会议，确定发展“互联网+医疗健康”措施，缓解看病就医难题、提升人民健康水平。</div>
             <div>
